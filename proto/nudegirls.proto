@@ -28,3 +28,12 @@ message Girls {
   repeated Girl girl = 1;
 }
 // [END messages]
+
+service Nudes {
+  rpc SendNude(Girl) returns (SendStatus) {}
+}
+
+enum SendStatus {
+  OK = 0;
+  FAILED = 1;
+}
