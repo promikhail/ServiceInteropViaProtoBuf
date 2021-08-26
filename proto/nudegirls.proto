@@ -33,7 +33,11 @@ service Nudes {
   rpc SendNude(Girl) returns (SendStatus) {}
 }
 
-enum SendStatus {
+message SendStatus {
+  Status Code = 1;
+}
+
+enum Status {
   OK = 0;
   FAILED = 1;
 }
