@@ -1,0 +1,30 @@
+// [START declaration]
+syntax = "proto3";
+package nudegirls;
+
+import "google/protobuf/timestamp.proto";
+// [END declaration]
+
+// [START java_declaration]
+option java_multiple_files = true;
+option java_package = "com.example.nudegirls.protos";
+option java_outer_classname = "nudegirlsprotos";
+// [END java_declaration]
+
+// [START go_declaration]
+option go_package = "../nudegirls";
+// [END go_declaration]
+
+// [START messages]
+message Girl {
+  int32 id = 1;
+  string name = 2;
+  bytes photo = 3;
+  google.protobuf.Timestamp last_updated = 5;
+}
+
+// Our address book file is just one of these.
+message Girls {
+  repeated Girl girl = 1;
+}
+// [END messages]
