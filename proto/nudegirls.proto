@@ -8,7 +8,7 @@ import "google/protobuf/timestamp.proto";
 // [START java_declaration]
 option java_multiple_files = true;
 option java_package = "com.example.nudegirls.protos";
-option java_outer_classname = "nudegirlsprotos";
+option java_outer_classname = "NudeGirlsProtos";
 // [END java_declaration]
 
 // [START go_declaration]
